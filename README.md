@@ -32,5 +32,5 @@ jobs:
         changelog: 'Content of change notes'
       env:
         STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
-        STEAM_PASSWORD: ${{ secrets.STEAM_PASSWORD }}
+        STEAM_PASSWORD: ${{ secrets.STEAM_Cache }}
 ```
