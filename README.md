@@ -32,5 +32,33 @@ jobs:
         changelog: 'Content of change notes'
       env:
         STEAM_USERNAME: ${{ secrets.STEAM_USERNAME }}
-        STEAM_PASSWORD: ${{ secrets.STEAM_Cache }}
+        STEAM_PASSWORD: ${{ secrets.STEAM_CACHE }}
 ```
+
+Minimum Login Cache:
+steamcmd/config/config.vdf
+``` vdf
+"InstallConfigStore"
+{
+	"Software"
+	{
+		"Valve"
+		{
+			"Steam"
+			{
+				"ConnectCache"
+				{
+					"00000000000"		"0000000000000000000000000000000000000000000000000000000000"
+				}
+				"Accounts"
+				{
+					"username"
+					{
+						"SteamID"		"00000000000000000"
+					}
+				}
+			}
+		}
+	}
+}
+``` 
